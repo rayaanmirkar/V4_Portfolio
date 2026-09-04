@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rayaan Mirkar</title>
+<style>
+  :root {
+    --bg: #060605;
+    --text: #ECECE6;
+    --muted: #8C8C84;
+    --muted-dim: #56564F;
+    --accent: #00FFCC;
+    --rule: rgba(236, 236, 230, 0.09);
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-font-smoothing: antialiased; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Lucida Console', 'Lucida Sans Typewriter', monospace;
+    line-height: 1.5;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 1.5px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 96px 24px 140px;
+  }
+
+  /* ---------- Header ---------- */
+
+  header {
+    margin-bottom: 56px;
+  }
+
+  h1 {
+    font-family: 'Lucida Console', 'Lucida Sans Typewriter', monospace;
+    font-weight: 400;
+    font-size: clamp(1.7rem, 5vw, 2.6rem);
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+    color: var(--text);
+  }
+
+  .one-line {
+    font-size: 1.0625rem;
+    color: var(--muted);
+    max-width: 46ch;
+    margin: 0;
+  }
+
+  /* ---------- Publications ---------- */
+
+  .pubs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pub {
+    padding: 30px 0;
+    border-top: 1px solid var(--rule);
+  }
+  .pub:last-child {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .pub-title {
+    font-family: 'Lucida Console', 'Lucida Sans Typewriter', monospace;
+    font-weight: 400;
+    font-size: 1.05rem;
+    line-height: 1.45;
+    margin: 0 0 8px;
+    max-width: 54ch;
+  }
+
+  .pub-authors {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0 0 6px;
+    max-width: 56ch;
+  }
+
+  .pub-authors .you {
+    color: var(--text);
+  }
+
+  .pub-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 10px;
+    font-size: 0.82rem;
+    color: var(--muted-dim);
+  }
+
+  .pub-meta .venue {
+    color: var(--muted);
+  }
+
+  .pub-links {
+    display: flex;
+    gap: 14px;
+  }
+
+  .pub-links a {
+    color: var(--muted-dim);
+    border-bottom: 1px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  .pub-links a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  @media (max-width: 480px) {
+    .wrap { padding: 64px 20px 100px; }
+    .pub-title { font-size: 1.15rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <h1>Rayaan Mirkar</h1>
+    <p class="one-line">comp neuro, proteomics, and deep learning</p>
+  </header>
+
+  
+  <main class="pubs">
+
+    <article class="pub">
+      <h2 class="pub-title">Evaluating Signal Dilution and Model Efficiency with BiLSTM Models Trained on Whole Phage Proteomes</h2>
+      <p class="pub-authors"><span class="you">Rayaan Mirkar</p>
+      <div class="pub-meta">
+        <span class="venue">Submitted to Neurips 2026 workshop ICBINB-BIO</span>
+        <span>2026</span>
+        <span class="pub-links">
+          <a href="Evaluating_Signal_Dilution_and_Model_Efficiency_with_BiLSTM_Models_Trained_on_Whole_Phage_Proteomes_PREPRINT_V.pdf">View PDF Document</a>
+        </span>
+      </div>
+    </article>
+     <article class="pub">
+      <h2 class="pub-title">Isometric: LLM-Powered Research Repository Environment Recreation</h2>
+      <p class="pub-authors"><span class="you">Rayaan Mirkar</p>
+      <div class="pub-meta">
+        <span class="venue">Github Repository</span>
+        <span>2026</span>
+        <span class="pub-links">
+          <a href="https://github.com/rayaanmirkar/Isometric">View Repository</a>
+          <a href="https://doi.org/10.5281/zenodo.21611340">DOI</a>
+
+        </span>
+      </div>
+    </article>
+
+    
+
+  </main>
+
+</div>
+
+</body>
+</html>
